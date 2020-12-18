@@ -1,0 +1,15 @@
+
+[1mFrom:[0m /mnt/c/Users/jeka/flatiron/sinatra-dynamic-routes-lab/app.rb @ line 26 self.GET /say/:word1/:word2/:word3/:word4/:word5:
+
+    [1;34m21[0m: 
+    [1;34m22[0m:   get [31m[1;31m'[0m[31m/say/:word1/:word2/:word3/:word4/:word5[1;31m'[0m[31m[0m [32mdo[0m
+    [1;34m23[0m:     status [1;34m200[0m
+    [1;34m24[0m:     @string = [31m[1;31m'[0m[31m[1;31m'[0m[31m[0m
+    [1;34m25[0m:     [1;34m1[0m.upto([1;34m5[0m) [32mdo[0m |index|
+ => [1;34m26[0m:       binding.pry
+    [1;34m27[0m:       p = [31m[1;31m"[0m[31mword[1;31m"[0m[31m[0m + index
+    [1;34m28[0m:       @string += [31m[1;31m"[0m[31m#{params[p]}[0m[31m [1;31m"[0m[31m[0m
+    [1;34m29[0m:     [32mend[0m
+    [1;34m30[0m:     @string.rstrip
+    [1;34m31[0m:   [32mend[0m
+
